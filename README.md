@@ -20,6 +20,7 @@ This project, I built with react-scripts module that help us build react quickly
 And I will use react-redux to manage state
 
 Step 1: npm install
+
 Step 2: npm start
 
 That's all to start project
