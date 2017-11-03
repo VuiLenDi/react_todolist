@@ -12,6 +12,10 @@ export const ADD_TODO = 'ADD_TODO'
 export const TOGGLE_TODO = 'TOGGLE_TODO'
 export const SET_VISIBILITY_FILTER = 'SET_VISIBILITY_FILTER'
 
+export const USER_FETCH_REQUESTED = 'USER_FETCH_REQUESTED'
+export const USER_FETCH_SUCCEEDED = 'USER_FETCH_SUCCEEDED'
+export const USER_FETCH_FAILED = 'USER_FETCH_FAILED'
+
 /*
  * other constants
  */
@@ -44,4 +48,16 @@ export function toggleTodo(id) {
 
 export function setVisibilityFilter(filter) {
     return { type: SET_VISIBILITY_FILTER, filter }
+}
+
+export function fetchUser() {
+    return { type: USER_FETCH_REQUESTED }
+}
+
+export function fetchUserSuccess(result) {
+    return { type: USER_FETCH_SUCCEEDED, result}
+}
+
+export function fetchUserFailed(msg) {
+    return { type: USER_FETCH_FAILED, msg}
 }

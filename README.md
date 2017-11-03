@@ -28,6 +28,7 @@ That's all to start project
 ## Basic structure and thinking.
 When start project with React-Redux, you must think and have plan for each component.
 You must split your functionality, and your web into components
+
 *Thumb rule: Never break more than 3 layers.
 
 Please view my structure, and picture, thinking, and if you have any question please ask me.

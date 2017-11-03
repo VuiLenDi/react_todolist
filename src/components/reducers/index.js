@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux'
 import todos from './todos'
 import visibilityFilter from './visibilityFilter'
-
+import users from './users'
 
 /*
     Composite
@@ -9,7 +9,8 @@ import visibilityFilter from './visibilityFilter'
 
 const todoApp = combineReducers({
     todos,
-    visibilityFilter
+    visibilityFilter,
+    users
 })
 
 export default todoApp
